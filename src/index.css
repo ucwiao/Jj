@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace; /* Make sure to import this font in your main index.html */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.prompt-color { color: #bb9af7; }
+.command-color { color: #7aa2f7; }
+.output-color { color: #c0caf5; }
+.error-color { color: #f7768e; }
+.link-color { color: #7dcfff; text-decoration: underline; }
+.link-color:hover { color: #bb9af7; }
+.terminal-input::placeholder { color: #414868; }
+.terminal-input:focus { outline: none; }
+.animate-pulse-fast { animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+/* Custom scrollbar for a more thematic feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1b26;
+}
+::-webkit-scrollbar-thumb {
+  background: #414868;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #565f89;
+}
+
